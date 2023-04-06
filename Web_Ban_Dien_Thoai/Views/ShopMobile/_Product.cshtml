@@ -1,0 +1,24 @@
+﻿@using Web_Ban_Dien_Thoai.Models;
+@model List<tb_DienThoai>
+
+@foreach (var item in Model)
+{
+    <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="margin-top:20px;">
+        <div class="item-product text-center">
+            <div class="image">
+                <a href="@Url.Action(" Details",new { id =1})"><img src="@Url.Content("~/hinh/hinhanhsp/"+item.HinhSP1)" style="width: 200px; height:200px;" alt="iphone13"></a>
+                <h4>@item.TenDienThoai</h4>
+            </div>
+            <div class="price-c">
+                <p class="price">
+                    <s>24.990.000 ₫</s>
+                    <br><span class="giamoi">@item.GiaBan</span>
+                </p>
+            </div>
+            <a href="~/Asset/gioha/gSamSung A03.html"><button type="button" class="btn btn-danger">Mua hàng</button></a>
+            <a href="~/Asset/hidat/amSung.html"><button type="button" class="btn btn-light">Sản phẩm</button></a>
+        </div>
+    </div>
+ }
+
+

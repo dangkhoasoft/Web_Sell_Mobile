@@ -1,0 +1,33 @@
+﻿@using Web_Ban_Dien_Thoai.Models;
+@model List<tb_LoaiSanPham>
+
+<div class="col-2 primary">
+    <div id="menu">
+        <ul>
+            @{
+
+                foreach (var item in Model)
+                {
+
+                    @*<li>@Html.ActionLink("Products", "index", "ShopMobile")</li>*@
+                    <li><a href="~/Asset/cuaha/g.html"> <strong>@item.TenLoaiSP</strong></a></li>
+
+
+                }
+
+            }
+        </ul>
+
+
+        @*<ul>
+                <li>@Html.ActionLink("Products", "index", "ShopMobile")</li>
+                <li><a href="~/Asset/cuaha/g.html"> <strong>Sản Phẩm</strong></a></li>
+                <li><a href="~/Asset/conta/t.html"> <strong>Liên Hệ</strong></a></li>
+                <li><a href="D:\KTTke web dreamwear. HTML CSS JS year 3\websiteSmartPhone\Khoa Hoc Lap Trinh/FAQS.html"> <strong>FAQS</strong></a></li>
+                <li><a href="https://ngocaodat.blogspot.com/"> <strong>Cao Đạt (A C E)</strong></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100009215226161"> <strong>Đăng Công </strong></a></li>
+                <li><a href="https://www.facebook.com/nguyen.manhtien.35380"> <strong>Mạnh Tiến </strong></a></li>
+                <li><a href="https://www.facebook.com/tonton28.2001"> <strong>Văn Toàn </strong></a></li>
+            </ul>*@
+</div>
+</div>
